@@ -18,8 +18,9 @@
   <!-- /.content-header -->
 
   <!-- Flash-data -->
+  <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash');?>"></div>
   <?php if($this->session->flashdata('flash')) : ?>
-    <div class="row mt-3">
+    <!-- <div class="row mt-3">
       <div class="col md-6">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
           Buku kas <strong>berhasil</strong> <?= 
@@ -29,7 +30,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
   <?php endif; ?>
   <!-- /.Flash-data -->
 
@@ -88,7 +89,7 @@
                         <a href="<?= base_url(); ?>kas/buku_kas/tambah_pengeluaran_kas/<?= $bk->id_kas;?>" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Pengeluaran"><i class="fa fa-minus"></i></a>
                       </td>
                       <td width="20px">
-                        <a href="<?= base_url(); ?>kas/buku_kas/hapus_buku_kas/<?= $bk->id_kas;?>" class="btn btn-danger" onclick="return confirm('Yakin untuk hapus?');" data-toggle="tooltip" data-placement="top" title="Hapus Kas"><i class="fa fa-trash"></i></a>
+                        <a href="<?= base_url(); ?>kas/buku_kas/hapus_buku_kas/<?= $bk->id_kas;?>" class="btn btn-danger tombol-hapus" data-toggle="tooltip" data-placement="top" title="Hapus Kas"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

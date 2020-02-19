@@ -1,7 +1,10 @@
-// if ($('#status').val('Aktif')) {
-// 	$('#status').addClass('badge badge-pill badge-success');
-// }else{
-// 	$('#status').addClass('badge bg-danger');
-// }
-	$('#status').addClass('badge badge-pill badge-success');
-	
+//uppercase
+$(function() {
+    $('#upper').keyup(function() {
+        this.value = this.value.toUpperCase();
+    });
+
+    $("input[data-bootstrap-switch]").each(function(){
+      $(this).bootstrapSwitch('state', $(this).prop('checked'));
+    });
+});

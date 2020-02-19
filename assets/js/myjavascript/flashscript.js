@@ -9,6 +9,16 @@ if (flashData) {
 		type : 'success'
 	});
 }
+
+const gagal = $('.flashgagal').data('flashgagal');
+if (gagal) {
+	Swal.fire({
+		icon: 'error',
+		title: 'Oops...',
+		text: 'Upload foto gagal!'
+	});
+}
+
 //hapus
 $('.tombol-hapus').on('click', function(e) {
 	e.preventDefault();

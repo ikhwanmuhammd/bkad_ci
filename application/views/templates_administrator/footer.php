@@ -36,6 +36,8 @@
 <script src="<?php echo base_url() ?>assets/plugins/sparklines/sparkline.js"></script>
 <!-- jQuery Knob Chart -->
 <script src="<?php echo base_url() ?>assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- datepicker -->
+<script src="<?php echo base_url() ?>assets/plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
 <!-- daterangepicker -->
 <script src="<?php echo base_url() ?>assets/plugins/moment/moment.min.js"></script>
 <script src="<?php echo base_url() ?>assets/plugins/daterangepicker/daterangepicker.js"></script>
@@ -47,6 +49,13 @@
 <script src="<?php echo base_url() ?>assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- SweetAlert2 -->
 <script src="<?php echo base_url() ?>assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+<!-- InputMask -->
+<script src="<?php echo base_url() ?>assets/plugins/moment/moment.min.js"></script>
+<script src="<?php echo base_url() ?>assets/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="<?php echo base_url() ?>assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="<?php echo base_url() ?>assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <!-- Toastr -->
 <script src="<?php echo base_url() ?>assets/plugins/toastr/toastr.min.js"></script>
 <!-- AdminLTE App -->

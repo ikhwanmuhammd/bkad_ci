@@ -31,7 +31,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a href="<?= base_url(); ?>data/tambah_anggota/" type="button" class="btn btn-primary mr-3"><i class="fas fa-plus fa-sm"></i> Tambah Anggota</a>
+              <a href="<?= base_url(); ?>data/data_anggota/tambah_anggota/" type="button" class="btn btn-primary mr-3"><i class="fas fa-plus fa-sm"></i> Tambah Anggota</a>
               <!-- <div class="form-horizontal form-inline float-right">
                 <label class="control-label mr-2" for="filter_status">Filter</label>
                 <select class="form-control form-sm" id="filter_status" name="filter_status">
@@ -49,6 +49,7 @@
                   <tr>
                     <th width="20px">No</th>
                     <th>ID</th>
+                    <th>NIK</th>
                     <th>Nama</th>
                     <th>JK</th>
                     <th>HP</th>
@@ -66,10 +67,11 @@
                     <tr>
                       <td><?php echo $no++ ?></td>
                       <td><?php echo $da->id?></td>
+                      <td><?php echo $da->nik?></td>
                       <td><?php echo strtoupper($da->nama)?></td>
                       <td><?php echo $da->jk?></td>
                       <td><?php echo $da->no_hp?></td>
-                      <td><?php echo strtoupper($da->nama_desa)?></td>
+                      <td><?php echo strtoupper($da->desa)?></td>
                       <td><?php echo strtoupper($da->pekerjaan)?></td>
                       <td><h5><span id="status" class="badge badge-pill badge-success"><?php echo $da->status_anggota?></span></h5></td>
                       <td width="20px">
